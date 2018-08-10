@@ -16,8 +16,7 @@
             <directory>${project.basedir}</directory>
             <outputDirectory>${file.separator}</outputDirectory>
             <includes>
-                <include>server1.bat</include>
-                <include>server2.bat</include>
+                <include>*.bat</include>
             </includes>
         </fileSet>
         <fileSet>

@@ -1,1 +1,1 @@
-java -cp .;lib/*;eureka-server-0.0.1-SNAPSHOT.jar org.windwant.eureka.EurekaServerApplication --server.port=8111 --register.port=8112 --spring.application.name=eureka1
+java -cp .;lib/*;eureka-server-0.0.1-SNAPSHOT.jar org.windwant.eureka.EurekaServerApplication --server.port=8111 --register.port=8112 --spring.application.name=eureka
