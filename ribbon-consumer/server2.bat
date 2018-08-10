@@ -1,0 +1,1 @@
+java -cp .;lib/*;ribbon-consumer-0.0.1-SNAPSHOT.jar org.windwant.ribbon.RibbonConsumer --server.port=8334 --register.port=8112 --spring.application.name=consumer2
