@@ -27,11 +27,11 @@ public class ConsumerController {
     @Autowired
     private Environment env;
 
-//    @Value("${from}")
-//    private String from;
+    @Value("${from}")
+    private String from;
 
     @RequestMapping("/config")
     public String config(){
-        return env.getProperty("property1");
+        return this.from + " : " + env.getProperty("property1");
     }
 }
