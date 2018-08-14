@@ -18,6 +18,15 @@
 		<!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
 	<!--</parent>-->
 
+	<modules>
+		<module>common-api</module>
+		<module>api-gateway</module>
+		<module>boot-service</module>
+		<module>ribbon-consumer</module>
+		<module>feign-consumer</module>
+		<module>config-server</module>
+		<module>eureka-server</module>
+	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
