@@ -26,6 +26,7 @@
 		<module>feign-consumer</module>
 		<module>config-server</module>
 		<module>eureka-server</module>
+		<module>bus-server</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
