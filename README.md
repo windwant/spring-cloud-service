@@ -1,0 +1,10 @@
+spring-cloud
+spring-boot
+spring-cloud-eureka
+spring-cloud-ribbon
+spring-cloud-feign
+spring-cloud-hystrix
+spring-cloud-zuul
+spring-cloud-config
+spring-cloud-bus
+spring-cloud-zipkin
