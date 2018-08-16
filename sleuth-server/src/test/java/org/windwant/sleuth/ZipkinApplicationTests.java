@@ -1,4 +1,4 @@
-package org.windwant.zipkin;
+package org.windwant.sleuth;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

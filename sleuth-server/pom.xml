@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.windwant.springcloud</groupId>
-	<artifactId>zipkin-server</artifactId>
+	<artifactId>sleuth-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>zipkin-server</name>
+	<name>sleuth-server</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
