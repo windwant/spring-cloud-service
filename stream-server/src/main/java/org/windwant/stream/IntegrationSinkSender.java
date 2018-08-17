@@ -12,6 +12,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.MessageBuilder;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -27,15 +28,15 @@ public class IntegrationSinkSender {
         return new MessageSource<Date>() {
             @Override
             public Message receive() {
-                Message msg = MessageBuilder.withPayload(new Date()).build();
-                logger.info("send {}", msg.toString());
+                Message msg = MessageBuilder.withPayload(LocalDateTime.now()).build();
+                logger.info("send {}", msg.getPayload());
                 return msg;
             }
         };
     }
 
     public interface OutPutSink{
-        String OUTPUT = "test";
+        String OUTPUT = IntegrationSinkReceiver.InputSink.INPUT;
 
         @Output(OutPutSink.OUTPUT)
         MessageChannel output();
