@@ -28,6 +28,7 @@
 		<module>eureka-server</module>
 		<module>bus-server</module>
 		<module>sleuth-server</module>
+		<module>stream-server</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
