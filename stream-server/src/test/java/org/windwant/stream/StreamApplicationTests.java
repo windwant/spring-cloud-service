@@ -23,4 +23,7 @@ public class StreamApplicationTests {
 		sinkSender.send(MessageBuilder.withPayload("test".getBytes()).build());
 	}
 
+	@Test
+	public void testStreamIntegrationSend(){
+	}
 }
