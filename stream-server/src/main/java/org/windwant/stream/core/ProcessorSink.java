@@ -6,8 +6,8 @@ import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.SubscribableChannel;
 
 public interface ProcessorSink{
-        String INPUT = "s-input";
-        String OUTPUT = "s-output";
+        String INPUT = "p-input";
+        String OUTPUT = "p-output";
 
         @Input(ProcessorSink.INPUT)
         SubscribableChannel input();
