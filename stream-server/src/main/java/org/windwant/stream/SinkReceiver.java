@@ -34,7 +34,7 @@ public class SinkReceiver {
     //注意返回值类型同listener的参数值相同
     @Transformer(inputChannel = InputSink.INPUT, outputChannel = InputSink.INPUT)
     public Object transform(JSONObject payLoad){
-        logger.info("transform：{}", payLoad);
+        logger.info("transform: {}", payLoad);
         return payLoad;
     }
 }

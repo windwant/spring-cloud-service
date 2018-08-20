@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -28,6 +29,10 @@ public class StreamApplicationTests {
 		msg.put("age", 10);
 		sinkSender.send(MessageBuilder.withPayload(msg.toJSONString()).build());
 		sinkSender.send(MessageBuilder.withPayload(LocalDateTime.now()).build());
+		SecurityProperties.User user = new SecurityProperties.User();
+		user.setName("lisa");
+		user.setPassword("123456");
+		sinkSender.send(MessageBuilder.withPayload(user).build());
 	}
 
 	@Test
